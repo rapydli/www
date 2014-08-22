@@ -6,17 +6,18 @@
 My Cloudmesh
 ===========================================
 
-Contents:
-
 .. toctree::
    :maxdepth: 2
 
+   team
+   overview
 
+.. comment::
 
-Indices and tables
-==================
+   Indices and tables
+   ==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   * :ref:`genindex`
+   * :ref:`modindex`
+   * :ref:`search`
 
