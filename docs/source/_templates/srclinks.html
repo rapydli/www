@@ -1,0 +1,35 @@
+<h3> k </h3>
+<ul class="this-page-menu">
+    <li><a href="{{ pathto('_sources/' + sourcename, true)|e }}"
+            rel="nofollow"
+            target="_blank">{{ _('Source') }}</a></li>
+    <li><a href="{{ show_srclink_url }}"
+            rel="nofollow"
+            target="_blank">{{ _('Source') }}</a></li>
+    <li><a href="{{ edit_srclink_url }}"
+            rel="nofollow"
+            target="_blank">{{ _('Edit') }}</a></li>
+     <li><a href="{{ history_srclink_url }}"
+             rel="nofollow"
+             target="_blank">{{ _('History') }}</a></li>
+     <li><a href="{{ annotate_srclink_url }}"
+             rel="nofollow"
+             target="_blank">{{ _('Annotate') }}</a></li>
+  </ul>
+
+  <h5><a href="{{ srclink_src_url }}">{{
+          srclink_src_url.lstrip('https://').lstrip('http://') }}</a>
+      / <a href="{{ srclink_src_rev_url }}"
+                rel="nofollow"
+                target="_blank"
+                font="monospace">{{ srclink_src_rev }}</a>
+  </h5>
+
+  <ul>
+
+    <li><pre>{{ srclink_src_clone_cmd }} {{ srclink_src_https_url }}</pre></li>
+
+    <li><pre>{{ srclink_src_clone_cmd }} {{ srclink_src_ssh_url }}</pre></li>
+
+    <li><pre>{{ srclink_src_clone_cmd }} {{ srclink_src_native_url }}</pre></li>
+  </ul>
